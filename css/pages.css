@@ -13,18 +13,17 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: pink;
 }
 
 /*
  * The skip-link link will be completely hidden until a user tabs to the link.
  * See the element-focusable rule in system.base.css.
  */
-/* line 31, ../sass/pages.scss */
+/* line 30, ../sass/pages.scss */
 #skip-link {
   margin: 0;
 }
-/* line 35, ../sass/pages.scss */
+/* line 34, ../sass/pages.scss */
 #skip-link a,
 #skip-link a:visited {
   display: block;
@@ -38,13 +37,14 @@ body {
 /*
  * Header
  */
-/* line 52, ../sass/pages.scss */
+/* line 51, ../sass/pages.scss */
 #logo {
   /* Wrapping link for logo */
   float: left;
   /* LTR */
   margin: 0;
   padding: 0;
+  display: none;
 }
 /* line 57, ../sass/pages.scss */
 #logo img {
