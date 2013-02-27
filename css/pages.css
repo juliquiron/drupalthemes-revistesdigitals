@@ -40,7 +40,7 @@ body.front article {
 
 /* line 42, ../sass/pages.scss */
 body {
-  background-color: rgba(235, 208, 92, 0.4);
+  background-color: rgba(242, 234, 223, 0.4);
   margin: 0;
   padding: 0;
 }
@@ -49,13 +49,13 @@ body {
 a,
 a:link,
 a:visited {
-  color: #1a6566;
+  color: #d9501e;
   text-decoration: none;
 }
 
 /* line 53, ../sass/pages.scss */
 a:hover {
-  color: #21445b;
+  color: #bf1725;
 }
 
 /* line 62, ../sass/pages.scss */
@@ -369,7 +369,7 @@ a:hover {
   -webkit-box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px;
   -moz-box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px;
   box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px;
-  background-color: rgba(209, 184, 130, 0.8);
+  background-color: rgba(31, 20, 38, 0.8);
   min-height: 320px;
 }
 /* line 147, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
@@ -408,7 +408,7 @@ body.not-front #page #main #content {
   -webkit-box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px inset;
   -moz-box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px inset;
   box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px inset;
-  background-color: rgba(209, 184, 130, 0.8);
+  background-color: rgba(31, 20, 38, 0.8);
 }
 /* line 147, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.not-front #page #main #content {
@@ -422,9 +422,9 @@ body.not-front #page #main #content button, body.not-front #page #main #content 
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   border-radius: 6px;
-  border: 1px solid #1a6566;
-  background-color: rgba(209, 184, 130, 0.8);
-  border-color: #1a6566 #21445b #21445b #1a6566;
+  border: 1px solid #d9501e;
+  background-color: rgba(31, 20, 38, 0.8);
+  border-color: #d9501e #bf1725 #bf1725 #d9501e;
   color: black;
   -webkit-box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px inset;
   -moz-box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px inset;
@@ -571,9 +571,9 @@ div.messages {
   /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
   margin: 1.5em 0;
   /* Drupal core uses "6px 0" margin */
-  background-color: #d1b882;
-  border: 1px solid #5d8a66;
-  color: #21445b;
+  background-color: #1f1426;
+  border: 1px solid #d97823;
+  color: #bf1725;
 }
 /* line 247, ../sass/pages.scss */
 div.messages ul {
