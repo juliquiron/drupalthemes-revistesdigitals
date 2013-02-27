@@ -1,3 +1,22 @@
+@import url("http://fonts.googleapis.com/css?family=Droid+Serif:400,700");
+/**
+ * Fonts
+ */
+@font-face {
+  font-family: "Geared";
+  src: url('fonts/../../fonts/Geared/GearedSlab.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "GearedB";
+  src: url('fonts/../../fonts/Geared/GearedSlab-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "GearedL";
+  src: url('fonts/../../fonts/Geared/GearedSlab-Light.ttf') format('truetype');
+}
+
 /**
  * @file
  * Page Styling
@@ -6,24 +25,427 @@
  * miscellaneous Drupal elements that appear in the $content variable, such as
  * ul.links, .pager, .more-link, etc.
  */
+/* line 33, ../sass/pages.scss */
+body.front article {
+  display: none;
+}
+
 /*
  * Body
  */
-/* line 17, ../sass/pages.scss */
+/* line 40, ../sass/pages.scss */
+* {
+  font-family: 'Droid Serif';
+}
+
+/* line 42, ../sass/pages.scss */
 body {
+  background-color: rgba(235, 208, 92, 0.4);
   margin: 0;
   padding: 0;
+}
+
+/* line 49, ../sass/pages.scss */
+a,
+a:link,
+a:visited {
+  color: #1a6566;
+  text-decoration: none;
+}
+
+/* line 53, ../sass/pages.scss */
+a:hover {
+  color: #21445b;
+}
+
+/* line 62, ../sass/pages.scss */
+#page {
+  background-color: none;
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* line 46, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* line 48, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .column, #page .span-1, #page .span-2, #page .span-3, #page .span-4, #page .span-5, #page .span-6, #page .span-7, #page .span-8, #page .span-9 {
+  display: inline;
+  float: left;
+  margin-right: 16px;
+}
+/* line 147, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #page .column, * html #page .span-1, * html #page .span-2, * html #page .span-3, * html #page .span-4, * html #page .span-5, * html #page .span-6, * html #page .span-7, * html #page .span-8, * html #page .span-9 {
+  overflow-x: hidden;
+}
+/* line 51, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .last {
+  margin-right: 0;
+}
+/* line 55, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .span-1 {
+  width: 90px;
+}
+/* line 55, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .span-2 {
+  width: 196px;
+}
+/* line 55, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .span-3 {
+  width: 302px;
+}
+/* line 55, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .span-4 {
+  width: 408px;
+}
+/* line 55, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .span-5 {
+  width: 514px;
+}
+/* line 55, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .span-6 {
+  width: 620px;
+}
+/* line 55, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .span-7 {
+  width: 726px;
+}
+/* line 55, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .span-8 {
+  width: 832px;
+}
+/* line 58, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .span-9 {
+  width: 938px;
+  margin: 0;
+}
+/* line 64, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page input.span-1, #page textarea.span-1, #page select.span-1 {
+  width: 90px;
+}
+/* line 64, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page input.span-2, #page textarea.span-2, #page select.span-2 {
+  width: 196px;
+}
+/* line 64, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page input.span-3, #page textarea.span-3, #page select.span-3 {
+  width: 302px;
+}
+/* line 64, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page input.span-4, #page textarea.span-4, #page select.span-4 {
+  width: 408px;
+}
+/* line 64, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page input.span-5, #page textarea.span-5, #page select.span-5 {
+  width: 514px;
+}
+/* line 64, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page input.span-6, #page textarea.span-6, #page select.span-6 {
+  width: 620px;
+}
+/* line 64, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page input.span-7, #page textarea.span-7, #page select.span-7 {
+  width: 726px;
+}
+/* line 64, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page input.span-8, #page textarea.span-8, #page select.span-8 {
+  width: 832px;
+}
+/* line 64, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page input.span-9, #page textarea.span-9, #page select.span-9 {
+  width: 938px;
+}
+/* line 68, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .append-1 {
+  padding-right: 115px;
+}
+/* line 68, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .append-2 {
+  padding-right: 230px;
+}
+/* line 68, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .append-3 {
+  padding-right: 345px;
+}
+/* line 68, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .append-4 {
+  padding-right: 460px;
+}
+/* line 68, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .append-5 {
+  padding-right: 575px;
+}
+/* line 68, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .append-6 {
+  padding-right: 690px;
+}
+/* line 68, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .append-7 {
+  padding-right: 805px;
+}
+/* line 68, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .append-8 {
+  padding-right: 920px;
+}
+/* line 72, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .prepend-1 {
+  padding-left: 115px;
+}
+/* line 72, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .prepend-2 {
+  padding-left: 230px;
+}
+/* line 72, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .prepend-3 {
+  padding-left: 345px;
+}
+/* line 72, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .prepend-4 {
+  padding-left: 460px;
+}
+/* line 72, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .prepend-5 {
+  padding-left: 575px;
+}
+/* line 72, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .prepend-6 {
+  padding-left: 690px;
+}
+/* line 72, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .prepend-7 {
+  padding-left: 805px;
+}
+/* line 72, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .prepend-8 {
+  padding-left: 920px;
+}
+/* line 76, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .pull-1, #page .pull-2, #page .pull-3, #page .pull-4, #page .pull-5, #page .pull-6, #page .pull-7, #page .pull-8, #page .pull-9 {
+  display: inline;
+  float: left;
+  position: relative;
+}
+/* line 79, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .pull-1 {
+  margin-left: -115px;
+}
+/* line 79, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .pull-2 {
+  margin-left: -230px;
+}
+/* line 79, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .pull-3 {
+  margin-left: -345px;
+}
+/* line 79, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .pull-4 {
+  margin-left: -460px;
+}
+/* line 79, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .pull-5 {
+  margin-left: -575px;
+}
+/* line 79, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .pull-6 {
+  margin-left: -690px;
+}
+/* line 79, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .pull-7 {
+  margin-left: -805px;
+}
+/* line 79, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .pull-8 {
+  margin-left: -920px;
+}
+/* line 79, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .pull-9 {
+  margin-left: -1035px;
+}
+/* line 81, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .push-1, #page .push-2, #page .push-3, #page .push-4, #page .push-5, #page .push-6, #page .push-7, #page .push-8, #page .push-9 {
+  display: inline;
+  float: left;
+  position: relative;
+}
+/* line 84, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .push-1 {
+  margin: 0 -115px 1.5em 115px;
+}
+/* line 84, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .push-2 {
+  margin: 0 -230px 1.5em 230px;
+}
+/* line 84, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .push-3 {
+  margin: 0 -345px 1.5em 345px;
+}
+/* line 84, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .push-4 {
+  margin: 0 -460px 1.5em 460px;
+}
+/* line 84, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .push-5 {
+  margin: 0 -575px 1.5em 575px;
+}
+/* line 84, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .push-6 {
+  margin: 0 -690px 1.5em 690px;
+}
+/* line 84, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .push-7 {
+  margin: 0 -805px 1.5em 805px;
+}
+/* line 84, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .push-8 {
+  margin: 0 -920px 1.5em 920px;
+}
+/* line 84, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .push-9 {
+  margin: 0 -1035px 1.5em 1035px;
+}
+/* line 86, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .prepend-top {
+  margin-top: 1.5em;
+}
+/* line 88, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+#page .append-bottom {
+  margin-bottom: 1.5em;
+}
+/* line 66, ../sass/pages.scss */
+#page hgroup {
+  display: inline;
+  float: left;
+  margin-right: 16px;
+  width: 938px;
+}
+/* line 147, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #page hgroup {
+  overflow-x: hidden;
+}
+/* line 69, ../sass/pages.scss */
+#page #navigation {
+  display: inline;
+  float: left;
+  margin-right: 16px;
+  width: 726px;
+  padding-left: 0px;
+}
+/* line 147, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #page #navigation {
+  overflow-x: hidden;
+}
+/* line 74, ../sass/pages.scss */
+#page .region-highlighted {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+  display: inline;
+  float: left;
+  margin-right: 16px;
+  width: 938px;
+  float: right;
+}
+/* line 147, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #page .region-highlighted {
+  overflow-x: hidden;
+}
+/* line 79, ../sass/pages.scss */
+#page #main {
+  padding-top: 0px;
+}
+/* line 82, ../sass/pages.scss */
+#page #main .block-block {
+  display: inline;
+  float: left;
+  margin-right: 16px;
+  width: 302px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px;
+  -moz-box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px;
+  box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px;
+  background-color: rgba(209, 184, 130, 0.8);
+  min-height: 320px;
+}
+/* line 147, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #page #main .block-block {
+  overflow-x: hidden;
+}
+/* line 89, ../sass/pages.scss */
+#page #main .block-block * {
+  padding: 14px;
+}
+/* line 92, ../sass/pages.scss */
+#page #main .block-block h2 {
+  margin-bottom: -18px;
+  padding-bottom: 4px;
+  line-height: 30px;
+}
+/* line 97, ../sass/pages.scss */
+#page #main .block-block p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* line 104, ../sass/pages.scss */
+body.not-front #page #main #content {
+  margin-bottom: 12px;
+  padding: 12px;
+  display: inline;
+  float: left;
+  margin-right: 16px;
+  width: 938px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px inset;
+  -moz-box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px inset;
+  box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px inset;
+  background-color: rgba(209, 184, 130, 0.8);
+}
+/* line 147, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.not-front #page #main #content {
+  overflow-x: hidden;
+}
+/* line 111, ../sass/pages.scss */
+body.not-front #page #main #content button, body.not-front #page #main #content input, body.not-front #page #main #content textarea {
+  padding: 4px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #1a6566;
+  background-color: rgba(209, 184, 130, 0.8);
+  border-color: #1a6566 #21445b #21445b #1a6566;
+  color: black;
+  -webkit-box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px inset;
+  -moz-box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px inset;
+  box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px inset;
+}
+/* line 117, ../sass/pages.scss */
+body.not-front #page #main #content button:active, body.not-front #page #main #content button:focus, body.not-front #page #main #content input:active, body.not-front #page #main #content input:focus, body.not-front #page #main #content textarea:active, body.not-front #page #main #content textarea:focus {
+  -webkit-box-shadow: rgba(33, 68, 91, 0.4) 0 0 12px, rgba(235, 208, 150, 0.3) 0 0 3px 1px inset;
+  -moz-box-shadow: rgba(33, 68, 91, 0.4) 0 0 12px, rgba(235, 208, 150, 0.3) 0 0 3px 1px inset;
+  box-shadow: rgba(33, 68, 91, 0.4) 0 0 12px, rgba(235, 208, 150, 0.3) 0 0 3px 1px inset;
 }
 
 /*
  * The skip-link link will be completely hidden until a user tabs to the link.
  * See the element-focusable rule in system.base.css.
  */
-/* line 30, ../sass/pages.scss */
+/* line 129, ../sass/pages.scss */
 #skip-link {
   margin: 0;
 }
-/* line 34, ../sass/pages.scss */
+/* line 133, ../sass/pages.scss */
 #skip-link a,
 #skip-link a:visited {
   display: block;
@@ -37,7 +459,12 @@ body {
 /*
  * Header
  */
-/* line 51, ../sass/pages.scss */
+/* line 147, ../sass/pages.scss */
+#header {
+  font-family: "Droid Serif", serif;
+}
+
+/* line 151, ../sass/pages.scss */
 #logo {
   /* Wrapping link for logo */
   float: left;
@@ -46,44 +473,45 @@ body {
   padding: 0;
   display: none;
 }
-/* line 57, ../sass/pages.scss */
+/* line 157, ../sass/pages.scss */
 #logo img {
   vertical-align: bottom;
 }
 
-/* line 62, ../sass/pages.scss */
+/* line 162, ../sass/pages.scss */
 #name-and-slogan {
   /* Wrapper for website name and slogan */
   float: left;
 }
 
-/* line 66, ../sass/pages.scss */
+/* line 166, ../sass/pages.scss */
 #site-name {
   /* The name of the website */
   margin: 0;
-  font-size: 2em;
+  font-size: 4em;
   line-height: 1.5em;
 }
-/* line 72, ../sass/pages.scss */
+/* line 172, ../sass/pages.scss */
 #site-name a:link,
 #site-name a:visited {
   color: #000;
   text-decoration: none;
 }
-/* line 78, ../sass/pages.scss */
+/* line 178, ../sass/pages.scss */
 #site-name a:hover,
 #site-name a:focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-/* line 83, ../sass/pages.scss */
+/* line 183, ../sass/pages.scss */
 #site-slogan {
   /* The slogan (or tagline) of a website */
   margin: 0;
-  font-size: 1em;
+  font-size: 24px;
+  margin-top: -14px;
 }
 
-/* line 88, ../sass/pages.scss */
+/* line 189, ../sass/pages.scss */
 .region-header {
   /* Wrapper for any blocks placed in the header region */
   clear: both;
@@ -96,16 +524,17 @@ body {
 /*
  * Content
  */
-/* line 109, ../sass/pages.scss */
+/* line 210, ../sass/pages.scss */
 .breadcrumb {
   /* The path to the current page in the form of a list of links */
+  display: none;
 }
-/* line 110, ../sass/pages.scss */
+/* line 212, ../sass/pages.scss */
 .breadcrumb ol {
   margin: 0;
   padding: 0;
 }
-/* line 114, ../sass/pages.scss */
+/* line 216, ../sass/pages.scss */
 .breadcrumb li {
   display: inline;
   list-style-type: none;
@@ -113,7 +542,7 @@ body {
   padding: 0;
 }
 
-/* line 127, ../sass/pages.scss */
+/* line 229, ../sass/pages.scss */
 h1.title,
 h2.node-title,
 h2.block-title,
@@ -124,37 +553,40 @@ h3.title {
   margin: 0;
 }
 
-/* line 131, ../sass/pages.scss */
+/* line 233, ../sass/pages.scss */
 tr.even {
   /* Some tables have rows marked even or odd. */
   /* background-color: #eee; */
   /* Drupal core uses a #eee background */
 }
 
-/* line 135, ../sass/pages.scss */
+/* line 237, ../sass/pages.scss */
 tr.odd {
   /* background-color: #eee; */
   /* Drupal core uses a #eee background */
 }
 
-/* line 139, ../sass/pages.scss */
+/* line 241, ../sass/pages.scss */
 div.messages {
   /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
   margin: 1.5em 0;
   /* Drupal core uses "6px 0" margin */
+  background-color: #d1b882;
+  border: 1px solid #5d8a66;
+  color: #21445b;
 }
-/* line 142, ../sass/pages.scss */
+/* line 247, ../sass/pages.scss */
 div.messages ul {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* line 148, ../sass/pages.scss */
+/* line 253, ../sass/pages.scss */
 div.status {
   /* Normal priority messages */
 }
 
-/* line 152, ../sass/pages.scss */
+/* line 257, ../sass/pages.scss */
 div.warning,
 tr.warning {
   /* Medium priority messages */
@@ -162,53 +594,53 @@ tr.warning {
   /* Drupal core uses: 1px solid #f0c020 */
 }
 
-/* line 157, ../sass/pages.scss */
+/* line 262, ../sass/pages.scss */
 div.error,
 tr.error {
   /* High priority messages. See also the .error declaration below. */
 }
 
-/* line 160, ../sass/pages.scss */
+/* line 265, ../sass/pages.scss */
 .error {
   /* Errors that are separate from div.messages status messages. */
   /* color: #e55; */
   /* Drupal core uses a #e55 background */
 }
 
-/* line 164, ../sass/pages.scss */
+/* line 269, ../sass/pages.scss */
 .warning {
   /* Warnings that are separate from div.messages status messages. */
   /* color: #e09010; */
   /* Drupal core uses a #e09010 background */
 }
 
-/* line 168, ../sass/pages.scss */
+/* line 273, ../sass/pages.scss */
 .tabs {
   /* See also the tabs.css file. */
 }
 
-/* line 171, ../sass/pages.scss */
+/* line 276, ../sass/pages.scss */
 .region-help {
   /* Help text on a page */
 }
 
-/* line 174, ../sass/pages.scss */
+/* line 279, ../sass/pages.scss */
 .more-help-link {
   /* Link to more help */
 }
 
-/* line 177, ../sass/pages.scss */
+/* line 282, ../sass/pages.scss */
 .region-content {
   /* Wrapper for the actual page content */
 }
 
-/* line 180, ../sass/pages.scss */
+/* line 285, ../sass/pages.scss */
 ul.inline {
   /* List of links generated by theme_links() */
   display: inline;
   padding: 0;
 }
-/* line 184, ../sass/pages.scss */
+/* line 289, ../sass/pages.scss */
 ul.inline li {
   display: inline;
   list-style-type: none;
@@ -216,31 +648,31 @@ ul.inline li {
   /* LTR */
 }
 
-/* line 190, ../sass/pages.scss */
+/* line 295, ../sass/pages.scss */
 span.field-label {
   /* The inline field label used by the Fences module */
   padding: 0 1em 0 0;
   /* LTR */
 }
 
-/* line 194, ../sass/pages.scss */
+/* line 299, ../sass/pages.scss */
 .item-list .pager {
   /* A list of page numbers when more than 1 page of content is available */
   padding: 0;
 }
-/* line 197, ../sass/pages.scss */
+/* line 302, ../sass/pages.scss */
 .item-list .pager li {
   /* Each page number in the pager list */
   padding: 0 0.5em;
 }
 
-/* line 202, ../sass/pages.scss */
+/* line 307, ../sass/pages.scss */
 .feed-icon {
   /* The link to the RSS or Atom feed for the current list of content */
   display: none;
 }
 
-/* line 206, ../sass/pages.scss */
+/* line 311, ../sass/pages.scss */
 .more-link {
   /* Aggregator, blog, and forum more link */
 }
@@ -251,6 +683,43 @@ span.field-label {
  * Remember to NOT add padding or margin to your .region-sidebar-first
  * (see the layout.css file.)
  */
+/**
+ * Views theaming
+ */
+/* line 328, ../sass/pages.scss */
+#block-views-slideshow-block {
+  display: inline;
+  float: left;
+  margin-right: 16px;
+  width: 938px;
+}
+/* line 147, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #block-views-slideshow-block {
+  overflow-x: hidden;
+}
+
+/* line 333, ../sass/pages.scss */
+#views_slideshow_cycle_main_slideshow-block .views_slideshow_slide,
+#views_slideshow_cycle_main_slideshow-block #views_slideshow_cycle_teaser_section_slideshow-block {
+  float: right;
+  width: 100%;
+}
+/* line 337, ../sass/pages.scss */
+#views_slideshow_cycle_main_slideshow-block .views-row {
+  float: right;
+  text-align: right;
+  width: 60%;
+}
+/* line 341, ../sass/pages.scss */
+#views_slideshow_cycle_main_slideshow-block .views-row .views-field-title {
+  font-size: 30px;
+}
+
+/* line 346, ../sass/pages.scss */
+#views_slideshow_slide_counter_slideshow-block {
+  display: none;
+}
+
 /*
  * Second sidebar (on right in LTR languages, on left in RTL)
  *
@@ -260,10 +729,41 @@ span.field-label {
 /*
  * Footer
  */
+/* line 10, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+body {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -72px;
+}
+/* line 18, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+body #footer {
+  height: 72px;
+}
+
+/* line 20, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#block-block-4 {
+  clear: both;
+  position: relative;
+  height: 72px;
+}
+
+/* line 366, ../sass/pages.scss */
+#footer {
+  background-color: #d1b882;
+  font-size: 12px;
+}
+
 /*
  * Page bottom
  */
-/* line 240, ../sass/pages.scss */
+/* line 375, ../sass/pages.scss */
 .region-bottom {
   /* Wrapper for any blocks placed in the page bottom region */
 }
