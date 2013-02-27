@@ -12,6 +12,7 @@
 @include font-face("GearedB", font-files("../../fonts/Geared/GearedSlab-Bold.ttf"));
 @include font-face("GearedL", font-files("../../fonts/Geared/GearedSlab-Light.ttf"));
 
+/** nous colors **/
 $color1: rgb(242,234,223);
 $color1t: rgba(242,234,223,0.4);
 $color2: rgb(31,20,38);
