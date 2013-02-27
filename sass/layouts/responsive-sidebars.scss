@@ -40,13 +40,16 @@ $zen-auto-include-item-base: false;
  * Center the page.
  */
 
-#page,
+header,
+footer,
+#main-content,
+.region-highlighted > div,
 .region-bottom {
   /* For screen sizes larger than 1200px, prevent excessively long lines of text
      by setting a max-width. */
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  max-width: 1080px;
 }
 
 /*

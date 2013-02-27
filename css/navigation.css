@@ -40,8 +40,8 @@ li a.active {
   /* overflow: hidden; */
   /* Sometimes you want to prevent overlapping with main div. */
   right: 0px;
-  clear: both;
   position: relative;
+  float: right;
 }
 /* line 53, ../sass/navigation.scss */
 #navigation .block {

@@ -63,34 +63,32 @@ a:visited {
 a:hover {
   color: $color5;
 }
-
+/*
 $blueprint_grid_margin: 16px;
 $blueprint_grid_columns: 9;
 $blueprint_grid_width: 90px;
 $blueprint_grid_outer_width: 115px;
-
+*/
 #page {
-  @include blueprint-grid;
   background-color: none;
-  @include container;
   hgroup {
-    @include column(9);
   }
   #navigation {
-    @include column(7);
+    float: right;
     padding-left: 0px;
+    width: auto;
+    top: 40px;
   }
 
-  .region-highlighted {
-    @include opacity(0.9);
-    @include column(9);
-    float: right;
-  }
   #main {
     padding-top: 0px;
   }
+  #main-content {
+    padding-top: 160px;
+    @include blueprint-grid;
+  }
   #main .block-block{
-    @include column(3);
+    @include column(9);
     @include border-radius(6px);
     @include box-shadow(rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235,208,150, 0.3) 0 0 3px 1px );
     background-color: $color2t;
@@ -215,6 +213,17 @@ body.not-front #page #main #content{
 }
 
 .region-highlighted {
+  width: 100%;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  position: absolute;
+  padding: 22px 0 22px 0;
+  right: 0px;
+  left: 0px;
+  height: 90px;
+  #block-views-slideshow-block {
+    padding-right: 40px;
+  }
 }
 
 .breadcrumb { /* The path to the current page in the form of a list of links */
@@ -336,7 +345,6 @@ span.field-label { /* The inline field label used by the Fences module */
  */
 
 #block-views-slideshow-block {
-    @include column(9);
 }
 #views_slideshow_cycle_main_slideshow-block {
   .views_slideshow_slide ,
