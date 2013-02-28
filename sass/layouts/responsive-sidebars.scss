@@ -43,8 +43,7 @@ $zen-auto-include-item-base: false;
 header,
 footer,
 #main-content,
-.region-highlighted > div,
-.region-bottom {
+.region-highlighted > div {
   /* For screen sizes larger than 1200px, prevent excessively long lines of text
      by setting a max-width. */
   margin-left: auto;

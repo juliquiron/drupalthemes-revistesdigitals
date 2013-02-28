@@ -725,7 +725,7 @@ $blueprint_grid_outer_width: 115px;
   margin-bottom: -18px;
   padding-bottom: 2px;
   line-height: 30px;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid #dddddd;
   margin: 0 20px -18px 20px;
   padding-left: 0px;
 }
@@ -751,7 +751,7 @@ body.not-front #page #main #content {
   -webkit-box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px inset;
   -moz-box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px inset;
   box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px inset;
-  background-color: white;
+  background-color: rgba(221, 221, 221, 0.9);
 }
 /* line 147, ../../../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.not-front #page #main #content {
@@ -766,7 +766,7 @@ body.not-front #page #main #content button, body.not-front #page #main #content 
   -o-border-radius: 6px;
   border-radius: 6px;
   border: 1px solid #d9501e;
-  background-color: white;
+  background-color: rgba(221, 221, 221, 0.9);
   border-color: #d9501e #bf1725 #bf1725 #d9501e;
   color: black;
   -webkit-box-shadow: rgba(33, 68, 91, 0.4) 0 0 4px, rgba(235, 208, 150, 0.3) 0 0 3px 1px inset;
@@ -870,8 +870,8 @@ body.not-front #page #main #content button:active, body.not-front #page #main #c
 /* line 216, ../sass/pages.scss */
 .region-highlighted {
   width: 100%;
-  border-top: 2px solid gray;
-  border-bottom: 2px solid gray;
+  border-top: 2px solid #dddddd;
+  border-bottom: 2px solid #dddddd;
   position: absolute;
   padding: 22px 0 22px 0;
   right: 0px;
@@ -930,8 +930,8 @@ div.messages {
   /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
   margin: 1.5em 0;
   /* Drupal core uses "6px 0" margin */
-  background-color: white;
-  border: 1px solid #d97823;
+  background-color: #dddddd;
+  border: 1px solid #dddddd;
   color: #bf1725;
 }
 /* line 267, ../sass/pages.scss */
@@ -1103,14 +1103,17 @@ body #footer {
 
 /* line 385, ../sass/pages.scss */
 #footer {
-  background-color: #d1b882;
+  -webkit-box-shadow: white 0 1px 40px inset, rgba(221, 221, 221, 0.9) 0 1px 40px inset;
+  -moz-box-shadow: white 0 1px 40px inset, rgba(221, 221, 221, 0.9) 0 1px 40px inset;
+  box-shadow: white 0 1px 40px inset, rgba(221, 221, 221, 0.9) 0 1px 40px inset;
+  background-color: rgba(221, 221, 221, 0.9);
   font-size: 12px;
 }
 
 /*
  * Page bottom
  */
-/* line 394, ../sass/pages.scss */
+/* line 395, ../sass/pages.scss */
 .region-bottom {
   /* Wrapper for any blocks placed in the page bottom region */
 }

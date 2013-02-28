@@ -24,8 +24,8 @@ $color5: rgb(191,23,37);
 */
 $color1: white;
 $color1t: white;
-$color2: white;
-$color2t: white;
+$color2: rgb(221,221,221);
+$color2t: rgba(221,221,221,0.9);
 $color3: rgb(217,120,35);
 $color4: rgb(217,80,30);
 $color5: rgb(191,23,37);
@@ -89,7 +89,7 @@ $blueprint_grid_outer_width: 115px;
   }
   #main .block-block{
     @include column(9);
-    background-color: $color2t;
+    background-color: $color1;
     min-height: 320px;
     * {
       padding: 14px;
@@ -99,7 +99,7 @@ $blueprint_grid_outer_width: 115px;
       margin-bottom: -18px;
       padding-bottom: 2px;
       line-height: 30px;
-      border-bottom: 2px solid gray;
+      border-bottom: 2px solid $color2;
       margin: 0 20px -18px 20px;;
       padding-left: 0px;
     }
@@ -215,8 +215,8 @@ body.not-front #page #main #content{
 
 .region-highlighted {
   width: 100%;
-  border-top: 2px solid gray;
-  border-bottom: 2px solid gray;
+  border-top: 2px solid $color2;
+  border-bottom: 2px solid $color2;
   position: absolute;
   padding: 22px 0 22px 0;
   right: 0px;
@@ -261,7 +261,7 @@ tr.odd {
 div.messages { /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
   margin: 1.5em 0; /* Drupal core uses "6px 0" margin */
   background-color: $color2;
-  border: 1px solid $color3;
+  border: 1px solid $color2;
   color: $color5;
 
   ul {
@@ -383,7 +383,8 @@ span.field-label { /* The inline field label used by the Fences module */
 @include sticky-footer(72px, 'body', '#footer', '#block-block-4');
 
 #footer {
-  background-color: rgb(209, 184,130);
+  @include box-shadow($color1 0 1px 40px inset, $color2t 0 1px 40px inset);
+  background-color: $color2t;
   font-size: 12px;
 }
 
